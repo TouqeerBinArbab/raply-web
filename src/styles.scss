@@ -1,1 +1,229 @@
-/* You can add global styles to this file, and also import other style files */
+/*! CSS Used from: Embedded */
+a {
+    color: inherit;
+}
+p,
+h2,
+h4 {
+    margin: 0;
+}
+body {
+    font-family: "sofiapro-regular", PingFangSC, sans-serif;
+}
+body {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    font-family: "sofiapro-regular", PingFangSC, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -ms-scrollbar-3dlight-color: #fff;
+    -webkit-scrollbar-3dlight-color: #fff;
+    -moz-scrollbar-3dlight-color: #fff;
+    -ms-scrollbar-3dlight-color: #fff;
+    scrollbar-3dlight-color: #fff;
+    -webkit-scrollbar-shadow-color: #fff;
+    -moz-scrollbar-shadow-color: #fff;
+    -ms-scrollbar-shadow-color: #fff;
+    scrollbar-shadow-color: #fff;
+    -webkit-scrollbar-face-color: rgba(22, 24, 35, 0.34);
+    -moz-scrollbar-face-color: rgba(22, 24, 35, 0.34);
+    -ms-scrollbar-face-color: rgba(22, 24, 35, 0.34);
+    scrollbar-face-color: rgba(22, 24, 35, 0.34);
+    -webkit-scrollbar-darkshadow-color: #fff;
+    -moz-scrollbar-darkshadow-color: #fff;
+    -ms-scrollbar-darkshadow-color: #fff;
+    scrollbar-darkshadow-color: #fff;
+}
+.desktop-container {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+html[pc="yes"] *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: #fff;
+}
+html[pc="yes"] *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.34);
+}
+/*! CSS Used fontfaces */
+@font-face {
+    font-family: "sofiapro-regular";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Sofia:Pro"), local("SofiaPro-Regular"),
+        url(https://s16.tiktokcdn.com/musical/resource/mtact/static/fonts/sofiapro-regular.woff) format("woff"),
+        url(https://s16.tiktokcdn.com/musical/resource/mtact/static/fonts/sofiapro-regular.otf) format("opentype"),
+        url(https://s16.tiktokcdn.com/musical/resource/mtact/static/fonts/embed-Sofia-Pro-Regular.ttf)
+            format("truetype");
+    font-display: swap;
+}
+
+/*! CSS Used from: Embedded */
+a {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+.tiktok-btn-pc {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: SofiaPro, system-ui;
+    min-width: 88px;
+    height: 28px;
+    padding: 6px 8px;
+    background-color: #fff;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    color: #161823;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+}
+.tiktok-btn-pc:focus {
+    outline: none;
+}
+.tiktok-btn-pc:hover {
+    background: rgba(22, 24, 35, 0.03);
+    border: 1px solid rgba(22, 24, 35, 0.2);
+}
+.tiktok-btn-pc:active {
+    background: rgba(22, 24, 35, 0.06);
+    border: 1px solid rgba(22, 24, 35, 0.2);
+}
+.tiktok-btn-pc-primary {
+    background-color: #fe2c55;
+    color: #fff;
+    border: none;
+}
+.tiktok-btn-pc-primary:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+    border: none;
+}
+.tiktok-btn-pc-primary:active {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), #fe2c55;
+    border: none;
+}
+.tiktok-btn-pc-medium {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+.tiktok-btn-pc-medium {
+    min-width: 164px;
+    height: 36px;
+}
+a {
+    color: inherit;
+}
+strong {
+    font-weight: normal;
+}
+
+.image-wrap.jsx-120798729 {
+    position: relative;
+    cursor: pointer;
+}
+.nav-user-list.jsx-120798729 {
+    width: 42px;
+    height: 42px;
+}
+
+a {
+    color: inherit;
+}
+p,
+h2 {
+    margin: 0;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Regular.woff2) format("woff2"),
+        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Regular.woff) format("woff"),
+        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Regular.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: ProximaNova;
+    src: url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff2) format("woff2"),
+        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff) format("woff"),
+        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Semibold.otf) format("opentype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: ProximaNova;
+    src: url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Bold.woff2) format("woff2"),
+        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Bold.woff) format("woff"),
+        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Bold.otf) format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: ProximaNova;
+    src: url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Regular.woff2) format("woff2"),
+        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Regular.woff) format("woff"),
+        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Regular.otf) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: ProximaNova;
+    src: url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff2) format("woff2"),
+        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff) format("woff"),
+        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Semibold.otf) format("opentype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: ProximaNova;
+    src: url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Bold.woff2) format("woff2"),
+        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Bold.woff) format("woff"),
+        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Bold.otf) format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

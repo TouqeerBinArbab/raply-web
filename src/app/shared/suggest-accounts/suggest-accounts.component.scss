@@ -1,0 +1,87 @@
+.tiktok-avatar {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-feature-settings: "tnum";
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
+    border-radius: 50%;
+}
+.tiktok-avatar img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.image-wrap.jsx-120798729 {
+    position: relative;
+    cursor: pointer;
+}
+.nav-user-list.jsx-120798729 {
+    width: 42px;
+    height: 42px;
+}
+.user-item-inner.jsx-154798699 {
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 64px;
+    padding-left: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.user-item-inner.jsx-154798699 .user-avatar.jsx-154798699 {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.user-item-inner.jsx-154798699 .user-infos.jsx-154798699 {
+    margin-left: 12px;
+    height: 47px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.user-item-inner.jsx-154798699 .user-infos.jsx-154798699 .user-title.jsx-154798699 {
+    height: 25px;
+    font-family: sofiapro-bold, PingFangSC, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgb(22, 24, 35);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.user-item-inner.jsx-154798699 .user-infos.jsx-154798699 .user-title.jsx-154798699 h4.jsx-154798699 {
+    max-width: 140px;
+    margin-right: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.user-item-inner.jsx-154798699 .user-infos.jsx-154798699 .user-desc.jsx-154798699 {
+    height: 20px;
+    font-family: proxima-regular, PingFangSC, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(22, 24, 35);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 140px;
+}
+.user-item-inner.jsx-154798699:hover {
+    background: rgba(22, 24, 35, 0.03);
+}

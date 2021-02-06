@@ -1,0 +1,614 @@
+.tiktok-avatar {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-feature-settings: "tnum";
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
+    border-radius: 50%;
+}
+.tiktok-avatar img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.tiktok-ui-loading {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.tiktok-ui-loading-container {
+    overflow: hidden;
+}
+.tiktok-ui-loading-green {
+    fill: #3af2ff;
+    stroke-width: 0;
+    r: 36px;
+    cx: 40px;
+    cy: 44px;
+    -webkit-animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+    animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+}
+.tiktok-ui-loading-red {
+    fill: #fe2c55;
+    stroke-width: 0;
+    r: 36px;
+    cx: 120px;
+    cy: 44px;
+    -webkit-animation: tiktok-red 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+    animation: tiktok-red 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+}
+.tiktok-ui-loading-black-circle {
+    fill: #0f0f0f;
+    stroke-width: 0;
+    stroke: #fff;
+    r: 36px;
+    cx: 40px;
+    cy: 44px;
+    -webkit-animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+    animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+}
+.tiktok-ui-loading-black {
+    fill: #000;
+}
+h3,
+h4 {
+    margin: 0;
+}
+strong {
+    font-weight: normal;
+}
+/*! CSS Used from: Embedded */
+.video-feed-container.jsx-2865275755 .video-feed-item {
+    width: 592px;
+    max-width: 592px;
+}
+@media (max-width: 991px) {
+    .video-feed-container.jsx-2865275755 .video-feed-item {
+        width: calc(100vw - 290px) !important;
+    }
+}
+@media (max-width: 767px) {
+    .video-feed-container.jsx-2865275755 .video-feed-item {
+        width: calc(100vw - 40px) !important;
+    }
+}
+@media (max-width: 479px) {
+    .video-feed-container.jsx-2865275755 .video-feed-item {
+        width: calc(100vw - 32px) !important;
+    }
+}
+.modal.jsx-1285478177 {
+    display: none;
+}
+.modal.jsx-1285478177 .modal-mask.jsx-1285478177 {
+    position: fixed;
+    inset: 0px;
+    background: rgba(22, 22, 22, 0.9);
+}
+.modal.jsx-1285478177 .modal-wrapper.jsx-1285478177 {
+    position: fixed;
+    inset: 0px;
+    display: flex;
+    z-index: 1000;
+    overflow: auto;
+    outline: 0px;
+}
+.modal.jsx-1285478177 .modal-wrapper.jsx-1285478177 .modal-content.jsx-1285478177 {
+    position: relative;
+    border-radius: 8px;
+    margin: auto;
+}
+.video-feed-item.jsx-179939359 {
+    position: relative;
+    padding: 20px 0px;
+    border-bottom: 0.5px solid rgba(22, 24, 35, 0.12);
+}
+.video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 {
+    position: relative;
+    margin-left: 68px;
+}
+@media (max-width: 479px) {
+    .video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 {
+        margin-left: 0px;
+    }
+}
+.video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .item-follow-wrapper {
+    position: absolute;
+    right: 0px;
+    top: 8px;
+}
+.video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .item-follow-wrapper .follow-button {
+    font-family: proxima-semibold, PingFangSC, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    min-width: 88px;
+    padding: 0px 10px;
+    height: 28px;
+}
+.video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .item-video-container.jsx-179939359 {
+    position: relative;
+    display: inline-block;
+}
+.video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .item-video-container.jsx-179939359:hover .report-text {
+    opacity: 1;
+}
+.video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .item-video-card-wrapper.jsx-179939359 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgb(22, 24, 35);
+    border-radius: 8px;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .item-action-bar {
+    position: absolute;
+    right: -64px;
+    bottom: 0px;
+}
+@media (max-width: 767px) {
+    .video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .item-action-bar {
+        right: -52px;
+    }
+}
+.video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .item-music-info-V4 {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    max-width: 524px;
+}
+.video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .report-text {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease 0s;
+}
+.item-music-info-V4::before {
+    background: url(https://sf16-scmcdn-sg.ibytedtos.com/goofy/tiktok/web/node/_next/static/images/music-80312cad94fb3699012382f64283dc74.svg)
+        center center no-repeat transparent !important;
+}
+.engagement-icon-v23 {
+    background-color: rgba(22, 24, 35, 0.06);
+    padding: 12px;
+    border-radius: 100%;
+    margin-left: 0px;
+    cursor: pointer;
+    width: 24px !important;
+    height: 24px !important;
+    background-size: 24px !important;
+    background-position: center center !important;
+}
+.engagement-icon-v23:hover {
+    background: rgba(22, 24, 35, 0.2);
+}
+@media (max-width: 767px) {
+    .engagement-icon-v23 {
+        padding: 6px;
+        width: 20px !important;
+        height: 20px !important;
+        background-size: 20px !important;
+    }
+}
+.engagement-text-v23 {
+    color: rgba(22, 24, 35, 0.75);
+    font-family: proxima-semibold, PingFangSC, sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    line-height: 17px !important;
+    padding: 0px 7px 0px 8px !important;
+}
+.feed-item-avatar:hover ~ .feed-item-content .author-uniqueId {
+    text-decoration: underline;
+}
+.author-info-content.jsx-1385049866 {
+    margin-right: 150px;
+}
+.tt-video-meta-caption.jsx-1385049866 {
+    margin-right: 150px;
+}
+@media (max-width: 479px) {
+    .tt-video-meta-caption.jsx-1385049866 {
+        margin-right: 0px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-top: 10px !important;
+    }
+}
+.user-avatar.jsx-872204369 {
+    position: relative;
+    cursor: pointer;
+}
+.feed-item-avatar.jsx-872204369 {
+    float: left;
+    position: relative;
+}
+@media (max-width: 479px) {
+    .feed-item-avatar.jsx-872204369 {
+        width: 52px;
+    }
+}
+.feed-item-avatar:hover ~ .feed-item-content .author-uniqueId {
+    text-decoration: underline;
+}
+.author-info-content.jsx-442964640 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.author-info-content.horizontal.jsx-442964640 {
+    flex-flow: row wrap;
+}
+.tt-author-info.jsx-242381890 {
+    cursor: default;
+}
+.author-info-content.horizontal.jsx-242381890 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.author-info-content.horizontal.jsx-242381890 .author-uniqueId.jsx-242381890 {
+    margin-right: 4px;
+}
+.author-info-content.horizontal.jsx-242381890 .author-nickname.jsx-242381890 {
+    line-height: 28px;
+}
+.author-uniqueId.jsx-242381890 {
+    font-family: sofiapro-semibold, PingFangSC, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+.author-uniqueId.jsx-242381890:hover {
+    cursor: pointer;
+}
+.author-uniqueId.jsx-242381890 .verified.jsx-242381890 {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    font-size: 0px;
+    vertical-align: middle;
+    margin-left: 4px;
+    margin-top: -3px;
+}
+.author-nickname.jsx-242381890 {
+    font-family: proxima-regular, PingFangSC, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0px;
+}
+.author-nickname.jsx-242381890:hover {
+    cursor: pointer;
+}
+.tt-video-meta-caption.jsx-531976133 {
+    font-family: proxima-regular, PingFangSC, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgb(18, 18, 18);
+    flex: 0 0 auto;
+    font-weight: normal;
+    margin-bottom: 0px;
+    word-break: break-word;
+}
+a.jsx-531976133 {
+    font-family: proxima-semibold, PingFangSC, sans-serif;
+    font-weight: 600;
+    color: rgb(18, 18, 18);
+}
+a.jsx-531976133:hover {
+    text-decoration: underline;
+}
+a.jsx-531976133:hover {
+    text-decoration: underline;
+}
+a.jsx-531976133 strong {
+    font-weight: 600;
+}
+.follow-button.jsx-3251180706 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 1px 6px;
+}
+.tt-video-music.jsx-698935136 {
+    position: relative;
+    max-width: 302px;
+    overflow: hidden;
+}
+.tt-video-music.jsx-698935136:hover {
+    text-decoration: underline;
+}
+.tt-video-music.jsx-698935136 a,
+.tt-video-music.jsx-698935136 a:hover,
+.tt-video-music.jsx-698935136 a:active,
+.tt-video-music.jsx-698935136 a:link {
+    color: rgb(255, 255, 255);
+}
+.tt-video-music.jsx-698935136 .video-music-content.jsx-698935136 {
+    display: flex;
+    width: max-content;
+}
+.tt-video-music.jsx-698935136 .video-music-content.pause.jsx-698935136 {
+    animation-play-state: paused !important;
+}
+.tt-video-music.jsx-698935136 .music-title-decoration.jsx-698935136:hover {
+    text-decoration: underline;
+}
+.tt-video-music.jsx-698935136 .music-title-decoration.jsx-698935136 .music-icon {
+    margin-right: 5px;
+    transform: translateY(2px);
+}
+.tt-video-music.black.jsx-698935136 a,
+.tt-video-music.black.jsx-698935136 a:hover,
+.tt-video-music.black.jsx-698935136 a:active,
+.tt-video-music.black.jsx-698935136 a:link {
+    color: rgb(22, 24, 35);
+}
+.tt-video-music.black.jsx-698935136 .video-music-content.jsx-698935136 {
+    font-family: proxima-semibold, PingFangSC, sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.tt-video-music.jsx-2204354762 .video-music-wrapper.jsx-2204354762 {
+    font-family: sofiapro-bold, PingFangSC, sans-serif;
+    font-weight: 700;
+    position: relative;
+    font-size: 18px;
+    line-height: 25px;
+    display: block;
+    overflow: hidden;
+}
+.tt-video-music.black.jsx-2204354762 .video-music-wrapper.jsx-2204354762 {
+    font-size: 16px;
+    line-height: 22px;
+    height: 22px;
+}
+.tt-video-music.black.jsx-2204354762 .video-music-wrapper.inline-block.jsx-2204354762 {
+    display: inline-block;
+}
+.image-card.jsx-828470630 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(22, 24, 35, 0.06);
+    cursor: pointer;
+    overflow: hidden;
+}
+.image-card.jsx-828470630:not(.fix-edge) {
+    transform: translateZ(0px);
+    -webkit-mask-image: -webkit-radial-gradient(center, circle cover, white 100%, black 100%);
+}
+.video-card-one-column.jsx-2055372491 {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.video-card-one-column.jsx-2055372491 .event-delegate-mask.jsx-2055372491 {
+    position: absolute;
+    inset: 0px;
+}
+.video-card-one-column.jsx-2055372491 .style-layer-mask.jsx-2055372491 {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 200px;
+    pointer-events: none;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.video-card-one-column.jsx-2055372491 .toggle-icon.jsx-2055372491 {
+    position: absolute;
+    left: 66px;
+    top: 16px;
+    width: 40px;
+    height: 40px;
+    background: center center / contain no-repeat transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease 0s;
+    z-index: 10;
+}
+.video-card-one-column.jsx-2055372491 .toggle-icon.jsx-2055372491 .toggle-inner {
+    transform: translate(10px, 10px);
+}
+.video-card-one-column.jsx-2055372491 .toggle-icon-v4.jsx-2055372491 {
+    bottom: 12px;
+    left: 12px;
+    top: unset;
+    right: unset;
+}
+.video-card-one-column.jsx-2055372491:hover .toggle-icon.jsx-2055372491 {
+    opacity: 1;
+}
+.video-card-one-column.jsx-3081388847:hover .mute-icon.jsx-3081388847 {
+    opacity: 1;
+}
+.video-card-one-column.jsx-3081388847 .show-mute.jsx-3081388847 {
+    opacity: 1;
+}
+.mute-icon.jsx-1860515201 {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease 0s;
+    z-index: 10;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.mute-icon.one_column.jsx-1860515201 {
+    bottom: 12px;
+    right: 12px;
+    top: unset;
+    left: unset;
+}
+.report-text.jsx-2826320419 {
+    font-family: proxima-semibold, PingFangSC, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.report-text.jsx-2826320419 .report-icon {
+    margin-right: 5px;
+    transform: translateY(3px);
+}
+.pc-action-bar.jsx-1045706868 {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.pc-action-bar.jsx-1045706868 .bar-item-wrapper.jsx-1045706868 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 48px;
+    font-size: 13px;
+}
+.pc-action-bar.jsx-1045706868 .bar-item-wrapper.jsx-1045706868 .bar-item-img.jsx-1045706868 {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-top: 8px;
+}
+.bar-item-text.jsx-3523196239 {
+    font-family: proxima-semibold, PingFangSC, sans-serif;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 6px;
+}
+video.jsx-3900254205 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*! CSS Used keyframes */
+@-webkit-keyframes tiktok-green {
+    25% {
+        cx: 80px;
+        r: 43.2px;
+    }
+    50% {
+        cx: 120px;
+        r: 36px;
+    }
+    75% {
+        cx: 80px;
+        r: 21.6px;
+    }
+    to {
+        cx: 40px;
+        r: 36px;
+    }
+}
+@keyframes tiktok-green {
+    25% {
+        cx: 80px;
+        r: 43.2px;
+    }
+    50% {
+        cx: 120px;
+        r: 36px;
+    }
+    75% {
+        cx: 80px;
+        r: 21.6px;
+    }
+    to {
+        cx: 40px;
+        r: 36px;
+    }
+}
+@-webkit-keyframes tiktok-red {
+    25% {
+        cx: 80px;
+        r: 24px;
+    }
+    50% {
+        cx: 40px;
+        r: 36px;
+    }
+    75% {
+        cx: 80px;
+        r: 43.2px;
+    }
+    to {
+        cx: 120px;
+        r: 36px;
+    }
+}
+@keyframes tiktok-red {
+    25% {
+        cx: 80px;
+        r: 24px;
+    }
+    50% {
+        cx: 40px;
+        r: 36px;
+    }
+    75% {
+        cx: 80px;
+        r: 43.2px;
+    }
+    to {
+        cx: 120px;
+        r: 36px;
+    }
+}

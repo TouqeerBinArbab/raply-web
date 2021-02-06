@@ -1,0 +1,626 @@
+p {
+    margin: 0;
+}
+.main-body.middle > div:last-child {
+    -webkit-flex: unset;
+    -ms-flex: unset;
+    flex: unset;
+}
+.main-body > div:last-child {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+/*! CSS Used from: Embedded */
+.share-layout {
+    margin: auto;
+    padding: 50px 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    max-width: 1194px;
+}
+@media (max-width: 479px) {
+    .share-layout {
+        padding: 50px 16px;
+    }
+}
+.share-layout.middle .share-layout-content {
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    padding-right: 48px !important;
+}
+.share-layout .share-layout-main {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 490px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.share-layout .share-layout-content {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+@media (max-width: 991px) {
+    .share-layout {
+        width: auto;
+    }
+    .share-layout .share-layout-content {
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 24px;
+    }
+}
+@media (max-width: 767px) {
+    .share-layout {
+        padding-right: 0;
+    }
+    .share-layout .share-layout-content {
+        padding-right: 18px;
+    }
+}
+/*! CSS Used from: Embedded */
+.video-feed-container.jsx-2865275755 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -24px;
+}
+.video-feed-container.jsx-2865275755::after {
+    content: "";
+    height: 0px;
+    display: block;
+    clear: both;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .video-feed-container.jsx-2865275755 {
+        margin-right: 0px;
+    }
+}
+@media (max-width: 479px) {
+    .video-feed-container.jsx-2865275755 {
+        margin-right: 0px;
+    }
+}
+.right-config-container.jsx-2611283975 {
+    position: fixed;
+    right: 24px;
+    bottom: -32px;
+    width: 50px;
+    transition: all 500ms ease 0s;
+    z-index: 7;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.right-config-container.hide-top.jsx-2611283975 {
+    transform: translateY(0px);
+}
+.to-top.jsx-2611283975 {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px;
+    background: url(https://sf16-scmcdn-sg.ibytedtos.com/goofy/tiktok/web/node/_next/static/images/to-top-icon-12ebc24cab2f8b586e3286930a4e00f4.svg)
+        center center / contain no-repeat transparent;
+    cursor: pointer;
+}
+.app-promotion.jsx-2611283975 {
+    margin-bottom: 8px;
+    display: flex;
+    position: relative;
+}
+.app-promotion.jsx-2611283975 > span.jsx-2611283975 {
+    padding: 0px 8px;
+    min-width: 71px;
+    height: 30px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px;
+    border-radius: 52px;
+    cursor: pointer;
+    transform: scale(0);
+    margin: auto;
+    line-height: 30px;
+    font-family: proxima-bold, PingFangSC, sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    text-align: center;
+    color: rgba(22, 24, 35, 0.75);
+    white-space: nowrap;
+}
+.app-promotion.jsx-2611283975 > span.show.jsx-2611283975 {
+    transform: scale(1);
+}
+.app-promotion.jsx-2611283975 > span.jsx-2611283975:hover {
+    background: rgb(241, 241, 241);
+}
+.app-promotion.jsx-2611283975 .promotion-expand.jsx-2611283975 {
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px;
+    border-radius: 8px;
+    transform-origin: 100% 100%;
+    display: none;
+    transform: scale(0);
+    animation-name: promotion-expand-hide-jsx-2611283975;
+    animation-duration: 0.3s;
+    animation-timing-function: cubic-bezier(0.4, 0.14, 0.3, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+.app-promotion.jsx-2611283975 .promotion-expand.jsx-2611283975 > span.jsx-2611283975 {
+    display: inline-flex;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+.app-promotion.jsx-2611283975 .promotion-expand.jsx-2611283975 .promotion-expand-real-contain.jsx-2611283975 {
+    margin-left: 16px;
+    margin-right: 48px;
+    display: flex;
+    flex-direction: column;
+}
+.app-promotion.jsx-2611283975 .promotion-expand.jsx-2611283975 .promotion-text-container.jsx-2611283975 {
+    font-family: sofiapro-bold, PingFangSC, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    height: 36px;
+    line-height: 36px;
+    min-width: 194px;
+    padding-left: 37px;
+    white-space: nowrap;
+    position: relative;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.app-promotion.jsx-2611283975 .promotion-expand.jsx-2611283975 .promotion-text-container.jsx-2611283975:hover {
+    background: rgba(22, 24, 35, 0.03);
+}
+.app-promotion.jsx-2611283975
+    .promotion-expand.jsx-2611283975
+    .promotion-text-container.promotion-pwa.jsx-2611283975::after {
+    display: block;
+    content: "";
+    width: calc(100% - 16px);
+    height: 1px;
+    position: absolute;
+    bottom: -7px;
+    left: 8px;
+    background-color: rgba(22, 24, 35, 0.12);
+}
+.app-promotion .promotion-expand .promotion-text-container > :first-child {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+}
+.feedback.jsx-2611283975 {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px;
+    background: center center / contain no-repeat;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+@media (max-width: 991px) {
+    .right-config-container.jsx-2611283975 {
+        right: 24px;
+    }
+}
+.promotion-download.jsx-2611283975 {
+    width: 440px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+    border-radius: 8px;
+    display: table;
+}
+.promotion-download.jsx-2611283975 .close-icon.jsx-2611283975 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 24px;
+    top: 24px;
+    background: rgba(22, 24, 35, 0.03);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+}
+.promotion-download .close-icon > * {
+    margin: auto;
+    color: rgba(0, 0, 0, 0.8);
+}
+.promotion-download.jsx-2611283975 .promotion-title.jsx-2611283975 {
+    font-family: proxima-bold, PingFangSC, sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 56px;
+    margin-bottom: 16px;
+    color: rgb(22, 24, 35);
+    text-align: center;
+}
+.promotion-download.jsx-2611283975 .qr-title.jsx-2611283975 {
+    display: block;
+    font-family: proxima-bold, PingFangSC, sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgb(22, 24, 35);
+    text-align: center;
+    padding: 0px 32px;
+}
+.promotion-download.jsx-2611283975 .qr-container.jsx-2611283975 {
+    width: 100%;
+    height: 104px;
+    margin-top: 16px;
+    display: flex;
+    position: relative;
+}
+.promotion-download.jsx-2611283975 .qr-container-wrapper.jsx-2611283975 {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.promotion-download.jsx-2611283975 .qr-code.jsx-2611283975 {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    margin: auto;
+    overflow: hidden;
+}
+.modal.jsx-1285478177 {
+    display: none;
+}
+.modal.jsx-1285478177 .modal-mask.jsx-1285478177 {
+    position: fixed;
+    inset: 0px;
+    background: rgba(22, 22, 22, 0.9);
+}
+.modal.jsx-1285478177 .modal-wrapper.jsx-1285478177 {
+    position: fixed;
+    inset: 0px;
+    display: flex;
+    z-index: 1000;
+    overflow: auto;
+    outline: 0px;
+}
+.modal.jsx-1285478177 .modal-wrapper.jsx-1285478177 .modal-content.jsx-1285478177 {
+    position: relative;
+    border-radius: 8px;
+    margin: auto;
+}
+.modal.jsx-1285478177 .modal-wrapper.jsx-1285478177 .close.jsx-1285478177 {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.modal.jsx-1285478177 .modal-wrapper.jsx-1285478177 .close.jsx-1285478177::before,
+.modal.jsx-1285478177 .modal-wrapper.jsx-1285478177 .close.jsx-1285478177::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 2px;
+    position: absolute;
+    left: 11px;
+    top: 19px;
+    background: rgb(0, 0, 0);
+}
+.modal.jsx-1285478177 .modal-wrapper.jsx-1285478177 .close.jsx-1285478177::before {
+    transform: rotate(45deg);
+}
+.modal.jsx-1285478177 .modal-wrapper.jsx-1285478177 .close.jsx-1285478177::after {
+    transform: rotate(-45deg);
+}
+.download-container {
+    padding: 29px 26px 48px;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(151, 151, 151);
+}
+.download-container .download-content {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.download-container .download-content .download-text {
+    font-family: sofiapro-semibold, PingFangSC, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+.download-container .download-content .download-wrapper {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.download-container .download-content .download-wrapper a {
+    margin: 0px 4px;
+}
+.download-container .download-content .download-wrapper a img {
+    width: 170px;
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 170px;
+}
+.download-container .download-content .download-wrapper a img.amazon {
+    background-position: 0px 0px;
+}
+.download-container .download-content .download-wrapper a img.apple {
+    background-position: 0px -53px;
+}
+.download-container .download-content .download-wrapper a img.google {
+    background-position: 0px -106px;
+}
+.download-container.from-fixed-config {
+    flex-direction: column;
+    width: 376px;
+    padding: 0px 32px;
+    border: none;
+    box-sizing: content-box;
+}
+.download-container.from-fixed-config .download-text {
+    font-family: sofiapro-bold, PingFangSC, sans-serif;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: rgb(22, 24, 35);
+    text-align: center;
+    font-size: 16px !important;
+    line-height: 22px !important;
+}
+.download-container.from-fixed-config .download-icon-wrapper {
+    transform: scale(0.69);
+    transform-origin: center top;
+    margin-top: 32px;
+    margin-bottom: 40.5px;
+}
+.download-container.from-fixed-config .download-icon-wrapper a {
+    margin: 0px 8.5px;
+}
+@media (max-width: 991px) {
+    .download-container {
+        padding: 48px 0px;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    .download-container .download-content.download-sms {
+        display: none;
+    }
+    .download-container .download-content .download-wrapper {
+        flex-direction: column;
+    }
+    .download-container .download-content .download-wrapper a {
+        margin: 4px 0px;
+    }
+}
+img.jsx-354803629 {
+    background-image: url(https://sf-tb-sg.ibytedtos.com/img/ttfe-malisg/tiktok_web/store-badge/en.png~296x0.image);
+}
+.webp img.jsx-354803629 {
+    background-image: url(https://sf-tb-sg.ibytedtos.com/img/ttfe-malisg/tiktok_web/store-badge/en.png~296x0.webp);
+}
+.download-sms.jsx-2184121603 {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    font-family: proxima-regular, PingFangSC, sans-serif;
+    font-weight: 400;
+}
+.download-sms.jsx-2184121603 .form-wrap {
+    outline: none;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+.download-sms.jsx-2184121603 .form-wrap.modal-download-style.jsx-2184121603 {
+    width: 100%;
+}
+.download-sms.jsx-2184121603 form.jsx-2184121603 {
+    position: relative;
+    box-sizing: border-box;
+    height: 43px;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-top: 1px solid rgb(138, 139, 145);
+    border-bottom: 1px solid rgb(138, 139, 145);
+    border-left: 1px solid rgb(138, 139, 145);
+    border-image: initial;
+    border-right: none;
+    border-radius: 2px;
+    font-size: 0px;
+    display: flex;
+}
+.download-sms.jsx-2184121603 form.jsx-2184121603 > .jsx-2184121603 {
+    outline: none;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.download-sms.jsx-2184121603 form.modal-download-style.jsx-2184121603 {
+    height: 32px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+}
+.download-sms.jsx-2184121603 form.modal-download-style.jsx-2184121603 .send-button {
+    height: 32px;
+}
+.download-sms.jsx-2184121603 form.modal-download-style.jsx-2184121603 > .jsx-2184121603 {
+    font-size: 16px;
+}
+.download-sms.jsx-2184121603 input.jsx-2184121603 {
+    height: 30px;
+    background: none;
+    border: none;
+}
+.download-sms.jsx-2184121603 input.jsx-2184121603::-webkit-input-placeholder {
+    color: rgb(138, 139, 145);
+}
+.download-sms.jsx-2184121603 input.jsx-2184121603::placeholder {
+    color: rgb(138, 139, 145);
+}
+.download-sms.jsx-2184121603 .select.jsx-2184121603 {
+    width: 72px;
+    color: rgb(138, 139, 145);
+    text-align: center;
+    cursor: pointer;
+    font-family: proxima-regular, PingFangSC, sans-serif;
+    font-weight: 400;
+}
+.download-sms.jsx-2184121603 .phone-input.jsx-2184121603 {
+    width: 290px;
+    border-left: 1px solid rgb(220, 220, 222);
+    text-indent: 20px;
+    font-family: proxima-regular, PingFangSC, sans-serif;
+    font-weight: 400;
+}
+.download-sms.jsx-2184121603 .send-button {
+    padding: 0px 14px;
+    height: 43px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: 0px;
+    margin-right: 0px;
+    font-family: proxima-regular, PingFangSC, sans-serif;
+    font-weight: 600;
+}
+.download-sms.jsx-2184121603 .send-button:disabled {
+    background: rgb(241, 241, 242);
+    color: rgb(176, 176, 180);
+    border-left: 0px rgb(138, 139, 145);
+    border-top-color: rgb(138, 139, 145);
+    border-right-color: rgb(138, 139, 145);
+    border-bottom-color: rgb(138, 139, 145);
+}
+.download-sms.jsx-2184121603 .send-button:disabled:hover {
+    border-color: rgb(138, 139, 145);
+}
+.download-sms.jsx-2184121603 .tips.jsx-2184121603 {
+    max-width: 420px;
+}
+.download-sms.jsx-2184121603 .download-tips.jsx-2184121603 {
+    font-family: proxima-regular, PingFangSC, sans-serif;
+    font-weight: 400;
+    width: 840px;
+    color: rgb(220, 220, 222);
+    transform: scale(0.5);
+    transform-origin: 0px 0px;
+    text-align: center;
+    margin-top: 12px;
+}
+.download-sms.jsx-2184121603 .download-tips.jsx-2184121603 p.jsx-2184121603 {
+    display: inline;
+    font-size: 20px;
+    line-height: 24px;
+}
+.download-sms.jsx-2184121603 .download-tips.modal-download-style.jsx-2184121603 {
+    color: rgba(22, 24, 35, 0.5);
+    transform: none;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+.download-sms.jsx-2184121603 .download-tips.modal-download-style.jsx-2184121603 p.jsx-2184121603 {
+    font-size: 12px;
+    line-height: 15px;
+}
+.download-sms.jsx-2184121603 .download-tips.modal-download-style.jsx-2184121603 a {
+    border: none;
+    font-weight: 600;
+    color: rgb(22, 24, 35);
+}
+@media (max-width: 991px) {
+    .download-sms.jsx-2184121603 {
+        display: none;
+    }
+}
+a.jsx-3383144598 {
+    color: inherit;
+    white-space: nowrap;
+    border-bottom: 1px solid;
+}
+/*! CSS Used keyframes */
+@-webkit-keyframes promotion-expand-hide-jsx-2611283975 {
+    0% {
+        transform: scale(1);
+        display: block;
+    }
+    100% {
+        transform: scale(0);
+        display: none;
+    }
+}
+@keyframes promotion-expand-hide-jsx-2611283975 {
+    0% {
+        transform: scale(1);
+        display: block;
+    }
+    100% {
+        transform: scale(0);
+        display: none;
+    }
+}
+/*! CSS Used fontfaces */

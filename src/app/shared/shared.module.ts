@@ -9,6 +9,7 @@ import { VideoGridComponent } from './video-grid/video-grid.component';
   declarations: [SuggestAccountsComponent, VideoGridComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [VideoGridComponent, SuggestAccountsComponent]
 })
 export class SharedModule { }
