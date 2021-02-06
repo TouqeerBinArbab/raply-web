@@ -227,3 +227,58 @@ h2 {
     font-style: normal;
     font-display: swap;
 }
+
+
+.tiktok-ui-loading {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.tiktok-ui-loading-container {
+    overflow: hidden;
+}
+.tiktok-ui-loading-green {
+    fill: #3af2ff;
+    stroke-width: 0;
+    r: 36px;
+    cx: 40px;
+    cy: 44px;
+    -webkit-animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+    animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+}
+.tiktok-ui-loading-red {
+    fill: #fe2c55;
+    stroke-width: 0;
+    r: 36px;
+    cx: 120px;
+    cy: 44px;
+    -webkit-animation: tiktok-red 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+    animation: tiktok-red 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+}
+.tiktok-ui-loading-black-circle {
+    fill: #0f0f0f;
+    stroke-width: 0;
+    stroke: #fff;
+    r: 36px;
+    cx: 40px;
+    cy: 44px;
+    -webkit-animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+    animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+}
+.tiktok-ui-loading-black {
+    fill: #000;
+}
