@@ -1,4 +1,4 @@
-<div id="__next">
+<div id="__next" *ngIf="video">
     <div id="main" class="jsx-977026505 desktop-container">
         <div style="width:100%;">
             <div class="jsx-83494793 share-layout middle">
@@ -7,33 +7,26 @@
                         <div class="tt-feed">
                             <div class="jsx-1331557196 video-card-big browse-mode">
 
-
-
                                 <!--video container-->
                                 <div class="jsx-1331557196 video-card-container">
                                     <div class="jsx-1331557196 video-card-container-warn"></div>
-                                    <div class="jsx-1169024735 background-image"><img
-                                            src="https://p16-sign-sg.tiktokcdn.com/obj/tos-alisg-p-0037/9aaaccb89d88473b9c35e282a316446d?x-expires=1612656000&amp;x-signature=eN49Hs3Tm02wLU9xmVe3t6L9D5w%3D"
-                                            class="jsx-1169024735"></div>
+                                    <div class="jsx-1169024735 background-image">
+                                        <img src="{{video.screenshot}}" class="jsx-1169024735">
+                                    </div>
                                     <div class="jsx-1283372866 video-card-browse"
-                                        style="background-image: url(&quot;https://p16-sign-sg.tiktokcdn.com/obj/tos-alisg-p-0037/9aaaccb89d88473b9c35e282a316446d?x-expires=1612656000&amp;x-signature=eN49Hs3Tm02wLU9xmVe3t6L9D5w%3D&quot;);">
-                                        <video sequence="0" listkey="foryou_list" isfromwebapp="v1"
-                                            playerattributes="[object Object]" viewmode="feed"
-                                            editorstate="[object Object]" playsinline="" loop=""
-                                            createtime="1611745269000" likes="" warninfoposition="bottom"
-                                            src="https://v77.tiktokcdn.com/e7d82524703c799afcd46317fe8cf1fb/601f332e/video/tos/alisg/tos-alisg-pve-0037/d2169970452f40aeb67d29de5123c0bb/?a=1180&amp;br=2794&amp;bt=1397&amp;cd=0%7C0%7C1&amp;ch=0&amp;cr=0&amp;cs=0&amp;cv=1&amp;dr=3&amp;ds=3&amp;er=&amp;l=202102061824020102341051415837C1DD&amp;lr=tiktok&amp;mime_type=video_mp4&amp;pl=0&amp;qs=0&amp;rc=amx1ZnE7dnZuMzMzNTgzM0ApZjNnZzM4M2RlNzU1OzQ8Z2c2aWUxaS1zYzVgLS0xLzRzc2MxMTBgX2NiLTYtMWEvY2E6Yw%3D%3D&amp;vl=&amp;vr="
-                                            preload="metadata"
+                                        style="background-image: url(&quot;{{video.screenshot}}&quot;);">
+                                        <!-- videoUrl -->
+                                        <video src="{{video.videoUrl}}"
                                             class="jsx-3900254205 horizontal video-player"></video><span
                                             class="jsx-1283372866 event-delegate-mask"></span>
-                                    </div><img
-                                        src="https://sf16-scmcdn-sg.ibytedtos.com/goofy/tiktok/web/node/_next/static/images/arrow-c26566a07694be4e19165eb102ca9b29.svg"
-                                        class="jsx-1169024735 control-icon arrow-right"><img
-                                        src="https://sf16-scmcdn-sg.ibytedtos.com/goofy/tiktok/web/node/_next/static/images/close-dc074e52693a0ee0428fb5508d5b9486.svg"
-                                        class="jsx-1169024735 control-icon close"><img
-                                        src="https://sf16-scmcdn-sg.ibytedtos.com/goofy/tiktok/web/node/_next/static/images/logo-441371124b15403175a080da9df31116.png"
+                                    </div>
+                                    <img (click)="back()" src="assets/svg/close.svg"
+                                        class="jsx-1169024735 control-icon close">
+                                    <img src="https://sf16-scmcdn-sg.ibytedtos.com/goofy/tiktok/web/node/_next/static/images/logo-441371124b15403175a080da9df31116.png"
                                         alt="TikTok" class="jsx-1169024735 control-icon logo">
-                                    <div class="jsx-1860515201 mute-icon browse-mode"><svg width="48" height="48"
-                                            viewBox="0 0 48 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                    <div class="jsx-1860515201 mute-icon browse-mode">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg"
                                             style="fill: rgb(84, 84, 84); fill-opacity: 0.92;">
                                             <circle cx="24" cy="24" r="24" fill="000" fill-opacity="1"></circle>
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -42,7 +35,8 @@
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M35.098 18.9489C34.5998 18.4508 33.7921 18.4508 33.2939 18.949L30.1368 22.1061L26.9797 18.949C26.4815 18.4508 25.6738 18.4508 25.1756 18.9489C24.6775 19.4471 24.6775 20.2548 25.1756 20.753L28.3327 23.9101L25.1757 27.0672C24.6775 27.5654 24.6775 28.3731 25.1757 28.8713C25.6738 29.3694 26.4815 29.3694 26.9797 28.8713L30.1368 25.7142L33.2939 28.8713C33.7921 29.3694 34.5998 29.3694 35.0979 28.8713C35.5961 28.3731 35.5961 27.5654 35.0979 27.0672L31.9409 23.9101L35.098 20.753C35.5962 20.2548 35.5962 19.4471 35.098 18.9489Z"
                                                 fill="white"></path>
-                                        </svg></div>
+                                        </svg>
+                                    </div>
                                     <div class="jsx-1285478177 modal">
                                         <div class="jsx-1285478177 modal-wrapper">
                                             <div class="jsx-1285478177 modal-mask">
@@ -127,13 +121,7 @@
                                     </div>
                                 </div>
 
-
-
-
-
-
-
-                                <app-video-content></app-video-content>
+                                <app-video-content [video]="video"></app-video-content>
                             </div>
                         </div>
                     </main>

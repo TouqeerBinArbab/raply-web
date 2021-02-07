@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-video-grid',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideoGridComponent implements OnInit {
 
+  @Input() video: any;
+  
   constructor() { }
 
   ngOnInit(): void {

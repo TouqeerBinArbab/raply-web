@@ -1,54 +1,25 @@
 <div class="jsx-1331557196 content-container">
     <div class="jsx-1331557196 user-info-container">
-
-        <div class="jsx-3166634257 jsx-932449746 user-info"><a href="/@littlewolfiebird?lang=en"
-                class="user-avatar browser-user-avatar jsx-872204369" rel="noopener"><span
+        <!-- /@littlewolfiebird?lang=en -->
+        <div *ngIf="video.rapper" class="jsx-3166634257 jsx-932449746 user-info">
+            <a href="/{{video.rapper.id}}" class="user-avatar browser-user-avatar jsx-872204369" rel="noopener"><span
                     class="tiktok-avatar tiktok-avatar-circle"
                     style="border-color: rgba(22, 24, 35, 0.12); border-width: 0.5px; z-index: 10; cursor: unset; width: 40px; height: 40px;"><img
-                        alt=""
-                        src="https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/31d9cf3868c9cece5cb16dafe6ae2099.jpeg?x-expires=1612720800&amp;x-signature=ycITZJHfHD2WU9KtzKDOd4zCaxA%3D"></span></a>
+                        alt="" src="{{video.rapper.imageUrl}}"></span></a>
             <div class="jsx-3166634257 jsx-932449746 user-info-link-container"><a
                     href="/@littlewolfiebird?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en"
                     class="user-info-link jsx-1040045378" rel="noopener">
-                    <h2 class="jsx-3166634257 jsx-932449746 user-username">littlewolfiebird</h2>
-                </a><a href="/@littlewolfiebird?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en"
-                    class="user-info-link jsx-1040045378" rel="noopener">
-                    <h2 class="jsx-3166634257 jsx-932449746 user-nickname">Little Wolfie Bird</h2>
+                    <h2 class="jsx-3166634257 jsx-932449746 user-username">{{video.rapper.userName}}</h2>
+                </a><a href="/{{video.rapper.id}}" class="user-info-link jsx-1040045378" rel="noopener">
+                    <h2 class="jsx-3166634257 jsx-932449746 user-nickname">{{video.rapper.fullName}}</h2>
                 </a></div><button type="button"
                 class="follow-button jsx-3251180706 tiktok-btn-pc tiktok-btn-pc-medium tiktok-btn-pc-line">Follow</button>
         </div>
 
-
-
-        <h1 class="jsx-498355143 video-meta-title"><strong class="jsx-498355143">Tony Squawk makin’ moves on </strong><a
-                href="/@tonyhawk?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en" class="jsx-2866971387"
-                rel="noopener"><strong class="jsx-2866971387">@tonyhawk </strong></a><strong class="jsx-498355143"> 😜
-            </strong><a href="/tag/skatebird?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en" class="jsx-2866971387"
-                rel="noopener"><strong class="jsx-2866971387">#skatebird </strong></a><strong class="jsx-498355143">
-            </strong><a href="/tag/rollin?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en" class="jsx-2866971387"
-                rel="noopener"><strong class="jsx-2866971387">#rollin </strong></a><strong class="jsx-498355143">
-            </strong><a href="/tag/skateboarding?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en" class="jsx-2866971387"
-                rel="noopener"><strong class="jsx-2866971387">#skateboarding </strong></a><strong class="jsx-498355143">
-            </strong><a href="/tag/parrot?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en" class="jsx-2866971387"
-                rel="noopener"><strong class="jsx-2866971387">#parrot </strong></a><strong class="jsx-498355143">
-            </strong><a href="/tag/pets?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en" class="jsx-2866971387"
-                rel="noopener"><strong class="jsx-2866971387">#pets </strong></a><strong class="jsx-498355143">
-            </strong><a href="/tag/fun?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en" class="jsx-2866971387"
-                rel="noopener"><strong class="jsx-2866971387">#fun </strong></a><strong class="jsx-498355143">
-            </strong><a href="/tag/cool?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en" class="jsx-2866971387"
-                rel="noopener"><strong class="jsx-2866971387">#cool </strong></a><strong class="jsx-498355143">
-            </strong><a href="/tag/petlife?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en" class="jsx-2866971387"
-                rel="noopener"><strong class="jsx-2866971387">#petlife </strong></a><strong class="jsx-498355143">
-            </strong><a href="/tag/fingerboard?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en" class="jsx-2866971387"
-                rel="noopener"><strong class="jsx-2866971387">#fingerboard </strong></a><strong class="jsx-498355143">
-            </strong><a href="/tag/bird?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en" class="jsx-2866971387"
-                rel="noopener"><strong class="jsx-2866971387">#bird </strong></a><strong class="jsx-498355143">
-            </strong><a href="/tag/animalsdoingthings?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en"
-                class="jsx-2866971387" rel="noopener"><strong class="jsx-2866971387">#animalsdoingthings </strong></a>
+        <h1 class="jsx-498355143 video-meta-title"><strong class="jsx-498355143">{{video.title}}</strong>
+            <a *ngFor="let hash of video.frHashTag" href="/tag/{{hash}}" class="jsx-2866971387" rel="noopener"><strong
+                    class="jsx-2866971387">#{{hash}} </strong></a>
         </h1>
-
-
-
 
 
         <h2 class="jsx-935353440 music-info"><a
@@ -61,14 +32,14 @@
                 </svg>Se Acabó la Cuarentena - Jowell &amp; Randy &amp; Kiko El Crazy</a></h2>
 
 
-
-
         <div class="jsx-1182361573 action-container">
-            <div class="jsx-1182361573 action-left"><span class="jsx-1182361573 action-wrapper-v2"><span
-                        class="jsx-1182361573 icons like"></span><strong
-                        class="jsx-1182361573 like-text">2.5M</strong></span><span
+            <div class="jsx-1182361573 action-left">
+                <span class="jsx-1182361573 action-wrapper-v2"><span class="jsx-1182361573 icons like">
+                    </span>
+                    <strong class="jsx-1182361573 like-text">2.5M</strong></span><span
                     class="jsx-1182361573 action-wrapper-v2"><span class="jsx-1182361573 icons comment"></span><strong
-                        class="jsx-1182361573 comment-text">18.4K</strong></span></div>
+                        class="jsx-1182361573 comment-text">18.4K</strong></span>
+            </div>
             <div class="jsx-1182361573 action-right">
                 <div class="jsx-301657307 share-container">
                     <p class="jsx-301657307 share-word">Share to</p>
