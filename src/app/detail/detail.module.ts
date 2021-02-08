@@ -5,16 +5,25 @@ import { IndexComponent } from './index/index.component';
 import { VideoContainerComponent } from './video-container/video-container.component';
 import { VideoContentComponent } from './video-content/video-content.component';
 
-
-const routes: Routes = [{
-  path: '', component: IndexComponent
-}];
+const routes: Routes = [
+  {
+    path: '',
+    component: IndexComponent,
+  },
+];
 
 @NgModule({
-  declarations: [IndexComponent, VideoContainerComponent, VideoContentComponent],
-  imports: [
-    CommonModule, RouterModule.forChild(routes)
+  declarations: [
+    IndexComponent,
+    VideoContainerComponent,
+    VideoContentComponent,
   ],
-  exports: [RouterModule]
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes),
+  ],
+  exports: [RouterModule],
+  providers: [
+  ],
 })
-export class DetailModule { }
+export class DetailModule {}

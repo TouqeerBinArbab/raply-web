@@ -6,8 +6,9 @@
                     class="tiktok-avatar tiktok-avatar-circle"
                     style="border-color: rgba(22, 24, 35, 0.12); border-width: 0.5px; z-index: 10; cursor: unset; width: 40px; height: 40px;"><img
                         alt="" src="{{video.rapper.imageUrl}}"></span></a>
-            <div class="jsx-3166634257 jsx-932449746 user-info-link-container"><a
-                    href="/@littlewolfiebird?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en"
+                        <!-- /@littlewolfiebird?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en -->
+                        <div class="jsx-3166634257 jsx-932449746 user-info-link-container"><a
+                    href=""
                     class="user-info-link jsx-1040045378" rel="noopener">
                     <h2 class="jsx-3166634257 jsx-932449746 user-username">{{video.rapper.userName}}</h2>
                 </a><a href="/{{video.rapper.id}}" class="user-info-link jsx-1040045378" rel="noopener">
@@ -23,28 +24,28 @@
 
 
         <h2 class="jsx-935353440 music-info"><a
-                href="/music/Se-Acabó-la-Cuarentena-6857275312967796738?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en"
+                href="/music/{{video.beat.id}}"
                 rel="noopener"><svg class="music-icon" width="20" height="20" viewBox="0 0 48 48" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M35.0001 10.7587C35.0001 10.1169 34.4041 9.64129 33.7784 9.78359L17.7902 13.4192C17.335 13.5227 17.0119 13.9275 17.0119 14.3943V37.9972H17.0109C17.0374 40.1644 14.8022 42.4189 11.612 43.2737C8.05093 44.2279 4.64847 43.0769 4.01236 40.7028C3.37624 38.3288 5.74735 35.6308 9.30838 34.6766C10.606 34.3289 11.8826 34.2608 13.0119 34.4294V14.3943C13.0119 12.0601 14.6271 10.0364 16.9033 9.5188L32.8914 5.88317C36.0204 5.17165 39.0001 7.54986 39.0001 10.7587V33.1191C39.084 35.3108 36.8331 37.6109 33.6032 38.4763C30.0421 39.4305 26.6397 38.2795 26.0036 35.9055C25.3675 33.5315 27.7386 30.8334 31.2996 29.8792C32.5961 29.5319 33.8715 29.4635 35.0001 29.6316V10.7587Z">
                     </path>
-                </svg>Se Acabó la Cuarentena - Jowell &amp; Randy &amp; Kiko El Crazy</a></h2>
+                </svg>{{video.beat.title}}</a></h2>
 
 
         <div class="jsx-1182361573 action-container">
             <div class="jsx-1182361573 action-left">
                 <span class="jsx-1182361573 action-wrapper-v2"><span class="jsx-1182361573 icons like">
                     </span>
-                    <strong class="jsx-1182361573 like-text">2.5M</strong></span><span
+                    <strong class="jsx-1182361573 like-text">{{video.likeCount}}</strong></span><span
                     class="jsx-1182361573 action-wrapper-v2"><span class="jsx-1182361573 icons comment"></span><strong
-                        class="jsx-1182361573 comment-text">18.4K</strong></span>
+                        class="jsx-1182361573 comment-text">{{video.commentCount}}</strong></span>
             </div>
             <div class="jsx-1182361573 action-right">
                 <div class="jsx-301657307 share-container">
                     <p class="jsx-301657307 share-word">Share to</p>
                     <div class="jsx-301657307 share-group "><a
-                            href="https://wa.me/?text=https%3A%2F%2Fwww.tiktok.com%2F%40littlewolfiebird%2Fvideo%2F6922393211637910786%3Fsender_device%3Dpc%26sender_web_id%3D6911143672654546434%26is_from_webapp%3Dv1%26is_copy_url%3D0"
+                            href="https://wa.me/?text={{sharing.link}}"
                             target="_blank" rel="noopener noreferrer"
                             class="jsx-301657307 jsx-2968923418 jsx-4149806874">
                             <div class="jsx-301657307"><svg width="24" height="24" viewBox="0 0 48 48" fill="none"
@@ -57,7 +58,7 @@
                                         fill="white"></path>
                                 </svg></div>
                         </a><a
-                            href="https://www.facebook.com/sharer/sharer.php?app_id=113869198637480&amp;u=https%3A%2F%2Fwww.tiktok.com%2F%40littlewolfiebird%2Fvideo%2F6922393211637910786%3Fsender_device%3Dpc%26sender_web_id%3D6911143672654546434%26is_from_webapp%3Dv1%26is_copy_url%3D0&amp;display=popup&amp;sdk=joey"
+                            href="https://www.facebook.com/sharer/sharer.php?app_id=535946980141789&amp;u={{sharing.link}}&amp;display=popup&amp;sdk=joey"
                             target="_blank" rel="noopener noreferrer"
                             class="jsx-301657307 jsx-2968923418 jsx-4149806874">
                             <div class="jsx-301657307"><svg width="24" height="24" viewBox="0 0 48 48" fill="none"
@@ -70,7 +71,7 @@
                                         fill="#0075FA"></path>
                                 </svg></div>
                         </a><a
-                            href="https://twitter.com/intent/tweet?refer_source=https%3A%2F%2Fwww.tiktok.com%2F%40littlewolfiebird%2Fvideo%2F6922393211637910786%3Fsender_device%3Dpc%26sender_web_id%3D6911143672654546434%26is_from_webapp%3Dv1%26is_copy_url%3D0&amp;text=https%3A%2F%2Fwww.tiktok.com%2F%40littlewolfiebird%2Fvideo%2F6922393211637910786%3Fsender_device%3Dpc%26sender_web_id%3D6911143672654546434%26is_from_webapp%3Dv1%26is_copy_url%3D0"
+                            href="https://twitter.com/intent/tweet?refer_source={{sharing.link}}&amp;text={{sharing.link}}"
                             target="_blank" rel="noopener noreferrer"
                             class="jsx-301657307 jsx-2968923418 jsx-4149806874">
                             <div class="jsx-301657307"><svg width="24" height="24" viewBox="0 0 48 48" fill="none"
@@ -101,9 +102,9 @@
 
 
 
-        <div class="jsx-3430037935 copy-link-container">
+        <div class="jsx-3430037935 copy-link-container" (click)="copyToClip()">
             <div class="jsx-3430037935 link-container">
-                https://www.tiktok.com/@littlewolfiebird/video/6922393211637910786?is_copy_url=0&amp;is_from_webapp=v1&amp;sender_device=pc&amp;sender_web_id=6911143672654546434
+                {{sharing.link}}
             </div>
             <div class="jsx-3430037935 copy-container">
                 <div class="jsx-3430037935 icon-link"></div>
