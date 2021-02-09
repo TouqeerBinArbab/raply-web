@@ -1,20 +1,19 @@
 <span class="lazyload-wrapper">
     <div class="jsx-179939359 jsx-2715883145 video-feed-item" style="width: 692px; max-width: 692px;">
         <!-- href="/@kylenutt117?lang=en" -->
-        <a *ngIf="video.rapper" class="user-avatar feed-item-avatar jsx-872204369"
+        <a href="{{video.rapper.sharingInfo.publicUrl}}" *ngIf="video.rapper" class="user-avatar feed-item-avatar jsx-872204369"
             title="{{video.rapper.fullName}} (@{{video.rapper.userName}}) Official | Raply">
             <span class="tiktok-avatar tiktok-avatar-circle"
-                style="border-color: rgba(22, 24, 35, 0.12); border-width: 0.5px; z-index: 10; cursor: unset; width: 56px; height: 56px;"><img
+                style="border-color: rgba(32, 58, 202, 0.12); border-width: 0.5px; z-index: 10; cursor: unset; width: 56px; height: 56px;"><img
                     alt="" src="{{video.rapper.imageUrl}}">
             </span>
         </a>
         <div class="jsx-179939359 jsx-2715883145 feed-item-content">
-            <!-- /@kylenutt117?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en -->
             <div *ngIf="video.rapper"
                 class="jsx-442964640 author-info-content tt-author-info jsx-1385049866 jsx-242381890 horizontal"><a
-                    href="" rel="noopener">
+                href="{{video.rapper.sharingInfo.publicUrl}}" rel="noopener">
                     <h3 class="author-uniqueId jsx-242381890" style="text-decoration: none;">
-                        {{video.rapper.userName}}<svg class="verified jsx-242381890" width="14" height="14"
+                        @{{video.rapper.userName}}<svg class="verified jsx-242381890" width="14" height="14"
                             viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="24" fill="#20D5EC"></circle>
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -22,13 +21,12 @@
                                 fill="white"></path>
                         </svg></h3>
                 </a>
-                <!-- /@kylenutt117?is_copy_url=1&amp;is_from_webapp=v1&amp;lang=en -->
-                <a href="" rel="noopener">
+                <a href="{{video.rapper.sharingInfo.publicUrl}}" rel="noopener">
                     <h4 class="author-nickname jsx-242381890">{{video.rapper.fullName}}</h4>
                 </a>
             </div>
 
-            <a href="/{{video.rapper.id}}/{{video.id}}">
+            <a href="{{video.sharingInfo.publicUrl}}">
                 <div class="tt-video-meta-caption jsx-1385049866 jsx-531976133">
                     <strong>{{video.title}} &#128073; </strong>
 
@@ -55,7 +53,7 @@
                 <div class="jsx-179939359 jsx-2715883145 item-video-container">
                     <div class="jsx-179939359 jsx-2715883145"
                         style="width: calc(0.56 * (400px + ((100vw - 768px) / 1152) * 100)); height: calc(400px + ((100vw - 768px) / 1152) * 100); position: relative;">
-                        <a href="/{{video.rapper.id}}/{{video.id}}"
+                        <a href="{{video.sharingInfo.publicUrl}}"
                             class="jsx-179939359 jsx-2715883145 item-video-card-wrapper">
                             <div class="jsx-828470630 image-card"
                                 style="border-radius: 4px; background-image: url(&quot;{{video.screenshot}}&quot;); background-color: black; background-size: calc(0.56 * (400px + ((100vw - 768px) / 1152) * 100));">
