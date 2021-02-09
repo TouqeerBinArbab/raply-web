@@ -16,7 +16,7 @@ export class VideoContentComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.sharing.link = `${environment.baseWebUrl}/${this.video.rapper.id}/${this.video.id}`;
+    this.sharing.link = `${environment.baseWebUrl}${this.video.sharingInfo.publicUrl}`;
   }
 
   copyToClip() {

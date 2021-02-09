@@ -70,10 +70,9 @@ html[pc="yes"] *::-webkit-scrollbar-thumb {
     font-weight: 400;
     font-style: normal;
     src: local("Sofia:Pro"), local("SofiaPro-Regular"),
-        url(https://s16.tiktokcdn.com/musical/resource/mtact/static/fonts/sofiapro-regular.woff) format("woff"),
-        url(https://s16.tiktokcdn.com/musical/resource/mtact/static/fonts/sofiapro-regular.otf) format("opentype"),
-        url(https://s16.tiktokcdn.com/musical/resource/mtact/static/fonts/embed-Sofia-Pro-Regular.ttf)
-            format("truetype");
+        url(assets/fonts/sofiapro-regular.woff) format("woff"),
+        url(assets/fonts/sofiapro-regular.otf) format("opentype"),
+        url(assets/fonts/embed-Sofia-Pro-Regular.ttf) format("truetype");
     font-display: swap;
 }
 
@@ -176,60 +175,31 @@ h2 {
 
 @font-face {
     font-family: ProximaNova;
-    src: url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Regular.woff2) format("woff2"),
-        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Regular.woff) format("woff"),
-        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Regular.otf) format("opentype");
+    src: url(assets/fonts/Proxima-Nova-Regular.woff2) format("woff2"),
+        url(assets/fonts/Proxima-Nova-Regular.woff) format("woff"),
+        url(assets/fonts/Proxima-Nova-Regular.otf) format("opentype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: ProximaNova;
-    src: url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff2) format("woff2"),
-        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff) format("woff"),
-        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Semibold.otf) format("opentype");
+    src: url(assets/fonts/Proxima-Nova-Semibold.woff2) format("woff2"),
+        url(assets/fonts/Proxima-Nova-Semibold.woff) format("woff"),
+        url(assets/fonts/Proxima-Nova-Semibold.otf) format("opentype");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: ProximaNova;
-    src: url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Bold.woff2) format("woff2"),
-        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Bold.woff) format("woff"),
-        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Bold.otf) format("opentype");
+    src: url(assets/fonts/Proxima-Nova-Bold.woff2) format("woff2"),
+        url(assets/fonts/Proxima-Nova-Bold.woff) format("woff"),
+        url(assets/fonts/Proxima-Nova-Bold.otf) format("opentype");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: ProximaNova;
-    src: url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Regular.woff2) format("woff2"),
-        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Regular.woff) format("woff"),
-        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Regular.otf) format("opentype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: ProximaNova;
-    src: url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff2) format("woff2"),
-        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Semibold.woff) format("woff"),
-        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Semibold.otf) format("opentype");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: ProximaNova;
-    src: url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Bold.woff2) format("woff2"),
-        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Bold.woff) format("woff"),
-        url(//s16.tiktokcdn.com/tiktok/falcon/tiktok_fonts/Proxima-Nova-Bold.otf) format("opentype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-
 .tiktok-ui-loading {
     display: -webkit-box;
     display: -webkit-flex;

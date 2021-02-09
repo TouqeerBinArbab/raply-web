@@ -280,9 +280,9 @@
     font-weight: 400;
     font-style: normal;
     src: local("Proxima:Nova"), local("ProximaNova-Regular"),
-        url(https://s16.tiktokcdn.com/musical/resource/mtact/static/fonts/proxima-nova-regular.woff2) format("woff2"),
-        url(https://s16.tiktokcdn.com/musical/resource/mtact/static/fonts/proxima-nova-regular.woff) format("woff"),
-        url(https://s16.tiktokcdn.com/musical/resource/mtact/static/fonts/proxima-nova-regular.otf);
+        url(../../../assets/fonts/Proxima-Nova-Regular.woff2) format("woff2"),
+        url(../../../assets/fonts/Proxima-Nova-Regular.woff) format("woff"),
+        url(../../../assets/fonts/Proxima-Nova-Regular.otf);
     font-display: swap;
 }
 @font-face {
@@ -290,6 +290,6 @@
     font-weight: 600;
     font-style: normal;
     src: local("Sofia:Pro"), local("SofiaPro-Semibold"),
-        url(https://s16.tiktokcdn.com/musical/resource/mtact/static/fonts/sofiapro-semibold.otf);
+        url(../../../assets/fonts/sofiapro-regular.otf);
     font-display: swap;
 }
