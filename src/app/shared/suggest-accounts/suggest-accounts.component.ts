@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-suggest-accounts',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./suggest-accounts.component.scss']
 })
 export class SuggestAccountsComponent implements OnInit {
+  @Input() user: any;
 
   constructor() { }
 

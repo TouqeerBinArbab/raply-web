@@ -81,7 +81,7 @@ a {
     -webkit-text-decoration: none;
     text-decoration: none;
 }
-.tiktok-btn-pc {
+.raply-btn-pc {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -116,36 +116,36 @@ a {
     line-height: 25px;
     font-weight: 700;
 }
-.tiktok-btn-pc:focus {
+.raply-btn-pc:focus {
     outline: none;
 }
-.tiktok-btn-pc:hover {
+.raply-btn-pc:hover {
     background: rgba(22, 24, 35, 0.03);
     border: 1px solid rgba(22, 24, 35, 0.2);
 }
-.tiktok-btn-pc:active {
+.raply-btn-pc:active {
     background: rgba(22, 24, 35, 0.06);
     border: 1px solid rgba(22, 24, 35, 0.2);
 }
-.tiktok-btn-pc-primary {
+.raply-btn-pc-primary {
     background-color: #fe2c55;
     color: #fff;
     border: none;
 }
-.tiktok-btn-pc-primary:hover {
+.raply-btn-pc-primary:hover {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
     border: none;
 }
-.tiktok-btn-pc-primary:active {
+.raply-btn-pc-primary:active {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), #fe2c55;
     border: none;
 }
-.tiktok-btn-pc-medium {
+.raply-btn-pc-medium {
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
 }
-.tiktok-btn-pc-medium {
+.raply-btn-pc-medium {
     min-width: 164px;
     height: 36px;
 }
@@ -200,7 +200,7 @@ h2 {
     font-style: normal;
     font-display: swap;
 }
-.tiktok-ui-loading {
+.raply-ui-loading {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -219,37 +219,37 @@ h2 {
     -ms-transform-origin: 0 0;
     transform-origin: 0 0;
 }
-.tiktok-ui-loading-container {
+.raply-ui-loading-container {
     overflow: hidden;
 }
-.tiktok-ui-loading-green {
+.raply-ui-loading-green {
     fill: #3af2ff;
     stroke-width: 0;
     r: 36px;
     cx: 40px;
     cy: 44px;
-    -webkit-animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
-    animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+    -webkit-animation: raply-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+    animation: raply-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
 }
-.tiktok-ui-loading-red {
+.raply-ui-loading-red {
     fill: #fe2c55;
     stroke-width: 0;
     r: 36px;
     cx: 120px;
     cy: 44px;
-    -webkit-animation: tiktok-red 1s cubic-bezier(0.05, 0, 1, 1) infinite;
-    animation: tiktok-red 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+    -webkit-animation: raply-red 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+    animation: raply-red 1s cubic-bezier(0.05, 0, 1, 1) infinite;
 }
-.tiktok-ui-loading-black-circle {
+.raply-ui-loading-black-circle {
     fill: #0f0f0f;
     stroke-width: 0;
     stroke: #fff;
     r: 36px;
     cx: 40px;
     cy: 44px;
-    -webkit-animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
-    animation: tiktok-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+    -webkit-animation: raply-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
+    animation: raply-green 1s cubic-bezier(0.05, 0, 1, 1) infinite;
 }
-.tiktok-ui-loading-black {
+.raply-ui-loading-black {
     fill: #000;
 }

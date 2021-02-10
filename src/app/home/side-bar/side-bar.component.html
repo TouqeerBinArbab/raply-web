@@ -31,18 +31,13 @@
                             </a></div>
                         <div class="jsx-3444054962 login-wrapper"><span class="jsx-3444054962">Log in to follow
                                 creators, like videos, and view comments.</span><button type="button"
-                                class="login-button tiktok-btn-pc tiktok-btn-pc-medium tiktok-btn-pc-line">Log
+                                class="login-button raply-btn-pc raply-btn-pc-medium raply-btn-pc-line">Log
                                 in</button></div>
                         <div class="jsx-3444054962 user-list hidden-bottom-line">
                             <div class="jsx-3444054962 user-list-header">Suggested accounts</div>
 
-                            <app-suggest-accounts></app-suggest-accounts>
-                            <app-suggest-accounts></app-suggest-accounts>
-                            <app-suggest-accounts></app-suggest-accounts>
-                            <app-suggest-accounts></app-suggest-accounts>
-                            <app-suggest-accounts></app-suggest-accounts>
-                            <app-suggest-accounts></app-suggest-accounts>
-
+                            <app-suggest-accounts *ngFor="let user of suggestedUsers" [user]="user"></app-suggest-accounts>
+                           
                             <div class="jsx-3444054962 see-all">
                                 <p class="jsx-3444054962">See all</p><svg width="17" height="17" viewBox="0 0 48 48"
                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg"

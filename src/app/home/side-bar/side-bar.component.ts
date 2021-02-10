@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-side-bar',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarComponent implements OnInit {
 
-  constructor() { }
+  suggestedUsers: any[] = [];
+
+  constructor(private readonly userService: UserService) { }
 
   ngOnInit(): void {
+    this.callApi();
   }
 
+  callApi() {
+    this.userService.getSuggestedUsers()
+        .then(response => this.suggestedUsers = response as any[]);
+  }
 }
